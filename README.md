@@ -1,1 +1,4 @@
-# Basic ReadMe
+- Dhruv Dole
+- I find answers about the world.
+- Writing code, linear algebra homework, reading textbooks.
+- MS Office ToDo, Outlook, Git
