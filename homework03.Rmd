@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
 ```
 
 #### Due: 2/17/2023 before 11:59pm. Submit in Canvas (file upload).
@@ -29,7 +31,12 @@ the number of pull requests you accepted, and the github repository from which y
         3. Commit messages should be consice and informative.
 2. Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set "gapminder-5060", like what we did in the class.  
 Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. **Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request and the merge.**
+```{r}
+data <- read.csv("practice1-your-gitname/gapminder-5060.csv")
+US <- data %>% filter(country == "United States")
+ggplot(data = US, aes(x = year, y = lifeExp)) + geom_line()
 
+```
 3. Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least
 a. one link to a chart or an image and
 b. at least one itemized or enumerated list.
