@@ -50,9 +50,17 @@ dashboards to view results
 
 a. one link to a chart or an image and
 
+![image](https://raw.githubusercontent.com/dsdole/practice1-your-gitname/main/01-data-pipeline-architecture-what-is-data-pipeline.webp)
 
-b. at least one itemized or enumerated list.
 
+    b. at least one itemized or enumerated list.
+        1. Pull raw data
+        2. clean and place in datalake
+        3. crawl for schema
+        4. query
+        5. analyze
+        6. model
+        7. present
 
 Note: your submission is supposed to be fully reproducible, i.e. the TA and I will 'knit' your submission in RStudio. Including the link to the image is the tricky part here. Make sure that you don't use any file structure that depends on your computing environment.
 
