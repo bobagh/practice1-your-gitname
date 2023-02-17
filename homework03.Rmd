@@ -32,13 +32,25 @@ the number of pull requests you accepted, and the github repository from which y
 2. Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set "gapminder-5060", like what we did in the class.  
 Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. **Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request and the merge.**
 ```{r}
-data <- read.csv("practice1-your-gitname/gapminder-5060.csv")
+data <- read.csv("https://raw.githubusercontent.com/dsdole/practice1-your-gitname/300ee57bd22a06f2726855df4098032666f3fdb7/gapminder-5060.csv")
 US <- data %>% filter(country == "United States")
 ggplot(data = US, aes(x = year, y = lifeExp)) + geom_line()
 
 ```
 3. Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least
+
+Data science is the study of data. Its purpose is to extract insights for business. It involves many fields, including
+but not limited to math, statistics, and computer science. An example of this would be an end to end data pipeline for
+stock market decision making. We start first with data collection. Using various APIs we can pull data for as many
+sources as needed, unstructured or not. These can be cleaned and passed into a datalake to be crawled at will. After
+that data scientists can use a query engine to select data features with which they can run experimental data analytics.
+The next step is creating a designing, training, and testing a statistical model to predict something. After that, a
+machine learning engineer can productionalize the model and buisness leaders and stakeholders can use the model through
+dashboards to view results
+
 a. one link to a chart or an image and
+
+
 b. at least one itemized or enumerated list.
 
 
