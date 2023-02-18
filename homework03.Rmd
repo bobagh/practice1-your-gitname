@@ -21,8 +21,8 @@ the number of pull requests you accepted, and the github repository from which y
 
 | member | repo                          | # of PRs made                         | # of Prs accepted |
 |--------|-------------------------------|---------------------------------------|-------------------|
-| Dhruv  | dsdole/practice1-your-gitname | **1** @ dsdole/AGHW3                  | **?**             |
-| Ahmed  | bobagh/AGHW3                  | **?** @ bobagh/practice1-your-gitname | **?**             |
+| Dhruv  | dsdole/practice1-your-gitname | **1** @ dsdole/AGHW3                  | **1**             |
+| Ahmed  | bobagh/AGHW3                  | **1** @ bobagh/practice1-your-gitname | **1**             |
 
 
     c. Write down a list with at least 3 tips of how to make working with git/github easier  
